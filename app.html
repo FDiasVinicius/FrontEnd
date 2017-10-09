@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FullStack</title>
+		<link rel="stylesheet" href="assets/css/style.css"/>
+	</head>
+	
+	<body>
+		<div id="topBar">
+			<div id="logoGp"><div id="logo"></div><span class="logomarca">FULLSTACK</span></div>
+			<input type="search" id="buscar" placeholder="BUSCAR por um veículo">
+		</div>
+		
+		<div id="content">
+			<div class="topBar">
+				<div class="titulo">VEÍCULO</div>
+				<div class="btn-plus"></div>
+			</div>
+			
+			<div id="masterContainer">
+				<div id="listar" class="act-container">
+					<div class="container-titulo">
+						Lista de veículos
+					</div>
+					
+					<div class="listaGp">
+						
+						
+					</div>
+				</div>
+				
+				<div id="detalhes" class="act-container">
+					<div class="container-titulo">
+						Detalhes
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div id="modal">
+			<div class="modal-fundo">
+			</div>
+			<div class="modalBox">
+					<div id="modal-header">
+						Novo Veículo
+					</div>
+					<div class="modal-body">
+						<input type="text" id="nVeiculo" placeholder="Veículo">
+						<input type="text" id="nMarca" placeholder="Marca">
+						<input type="number" id="nAno" placeholder="Ano">
+						<div id="gpVendido">
+							<input type="checkbox" id="nVendido">
+							<label for="nVendido">Vendido</label>
+						</div>
+						<textarea id="nDescricao" placeholder="Descricao"></textarea>
+					</div>
+					<div class="modal-footer">
+						<button id="nAdd">ADD</button>
+						<button id="nFechar">Fechar</button>
+					</div>
+				</div>
+		</div>
+	</body>
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</html>

@@ -1,0 +1,331 @@
+body{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: e2e4e1;
+    margin: 0px;
+    font-family: monospace;
+}
+
+#topBar{
+	position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #364147
+}
+
+#logoGp{
+	float: left;
+    width: 250px;
+    height: 100%;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#logo{
+	width: 60px;
+    height: 100%;
+    display: inline-block;
+    background-image: url(../img/drop.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;;
+}
+
+.logomarca{
+	position: relative;
+    top: -25px;
+}
+
+
+
+#buscar{
+	float: right;
+    width: 300px;
+    height: 100%;
+    background-color: #2a3138;
+    border: none;
+    padding-left: 5px;
+    color: white;
+}
+
+#content{
+	position: absolute;
+    width: 100%;
+    top: 100px;
+    color: #364147;
+}
+
+#content .topBar{
+	width: 80%;
+    margin: auto;
+    height: 60px;
+    border-bottom: 2px solid grey;
+    line-height: 60px;
+}
+
+
+#content .topBar .titulo{
+	float: left;
+	padding: 10 0 10 0;
+}
+
+#content .topBar .btn-plus{
+	float: right;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/plus.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#masterContainer{
+	width: 80%;
+    left: 10%;
+    padding: 10px;
+    position: absolute;
+}
+
+.act-container{
+    width: 47%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container-titulo{
+	padding: 10 0 10 0;
+}
+
+#listar{
+	float: left;
+}
+
+#detalhes{
+	float: right;
+}
+
+.listaGp{
+	overflow-y: auto;
+	height: 50vh;
+}
+
+.listaGp .item{
+	width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.item .icon-tag{
+	width: 50px;
+    height: 50px;
+    float: right;
+    background-image: url(../img/tag.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 5px;
+}
+
+.item .info{
+	float: left;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.item .info span{
+	display: inherit;
+}
+
+.item .item-modelo{
+	color: green;
+}
+
+.item .item-ano{
+	color: grey;
+}
+
+#detalhes .dt-body{
+	background-color: white;
+    height: 50vh;
+    position: relative;
+}
+
+#detalhes-header{
+	height: 120px;
+}
+
+#detalhes-header .titulo{
+	color: green;
+    padding: 15px;
+}
+
+.dt-header-block{
+    width: 45%;
+    padding: 10px;
+}
+
+.dt-header-block label{
+	display: inherit;
+	margin-bottom:2px;
+}
+
+.dt-header-block span{
+	color: grey;
+}
+
+#dtMarca{
+	float: left;
+}
+
+#dtAno{
+	float: right;
+}
+
+#descricao{
+	padding-left: 10px;
+    padding-right: 10px;
+    height: 35%;
+    overflow: auto;
+}
+
+#bottomBar{
+	height: 60px;
+    border-top: solid 1px grey;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#bottomBar button{
+	width: 150px;
+    height: 50px;
+    background-color: #364147;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#bottomBar .icon-tag{
+	float: right;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/tag.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 5px;
+}
+
+#modal{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal-fundo{
+    background-color: #364147;
+    opacity: 0.5;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.modalBox{
+	width: 50%;
+    height: 500px;
+    left: 25%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #e2e4e1;
+    display: block;
+    z-index: 9999999;
+    opacity: 1;
+    position: absolute;
+}
+
+#modal-header{
+	font-size: 22px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+#modal-body{
+	padding: 10px;
+}
+
+.modal-body input{
+	width: 40%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 15px;
+    height: 40px;
+    background: #e2e4e1;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.modal-body textarea{
+	width: 90%;
+    margin-left: 4%;
+    height: 80px;
+    background: #e2e4e1;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+}
+
+#gpVendido{
+	width: 40%;
+    display: inline-block;
+}
+
+#gpVendido input[type=checkbox]{
+	width: 15px;
+    position: relative;
+    top: 14px;
+}
+
+.modal-footer{
+	text-align: right;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 90px;
+    margin: 5px;
+}
+
+.modal-footer button{
+	width: 150px;
+    height: 50px;
+    background-color: #364147;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#nFechar{
+	margin-right: 20px;
+}
+
+button{
+	cursor: pointer;
+}
+
+#modal{
+	display: none;
+}
