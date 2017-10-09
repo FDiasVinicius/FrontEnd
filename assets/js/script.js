@@ -28,7 +28,6 @@ function buscarVeiculos(criteria){
 	}
 	$.ajax({url:API+"/veiculos"+filtro, type:"get", dataType:"json", data:[], crossDomain: true,
 		success: function(resp){
-			console.log(resp);
 			for(aux in resp) {
 				$("#listar .listaGp").append(
 					'<div class="item" onClick="detalhes('+aux._id+')">'+
@@ -42,10 +41,6 @@ function buscarVeiculos(criteria){
 				);
 			}
 	}});
-}
-
-function response(resp){
-	console.log(resp);
 }
 
 function detalhes(id){
